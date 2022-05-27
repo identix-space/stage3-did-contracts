@@ -1,0 +1,60 @@
+{
+	"ABI version": 2,
+	"version": "2.2",
+	"header": ["pubkey", "time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"reg","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getDidDocs",
+			"inputs": [
+				{"name":"pk","type":"uint256"},
+				{"name":"addr","type":"address"}
+			],
+			"outputs": [
+				{"name":"docs","type":"address[]"}
+			]
+		},
+		{
+			"name": "onGetDidDocs",
+			"inputs": [
+				{"name":"docs","type":"address[]"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "registry",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"registry","type":"address"}
+			]
+		},
+		{
+			"name": "lastDocs",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"lastDocs","type":"address[]"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"registry","type":"address"},
+		{"name":"lastDocs","type":"address[]"}
+	]
+}
